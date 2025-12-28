@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite - 15 anos Maria Gabriely</title>
+
+<!-- Fontes elegantes -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ======= Estilos Jazz & Blues (Prata + Azul Serenite) ======= */
+  body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #e0e0e0; /* prata suave */
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: url('./fundo.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  header {
+    padding: 3rem 1rem 2rem 1rem;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 2px solid #c0c0c0; /* prata */
+  }
+
+  header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #c0c0c0; /* prata */
+    margin: 0;
+    text-shadow: 2px 2px 15px #1e3a5f; /* brilho azul serenite */
+  }
+
+  header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #87a8c7; /* azul serenite claro */
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 8px #000;
+  }
+
+  .details {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid #87a8c7; /* azul serenite */
+  }
+
+  .details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #c0c0c0; /* prata */
+    font-weight: 600;
+  }
+
+  /* ======= Botões ======= */
+  .btn {
+    display: inline-block;
+    margin: 0.8rem 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #c0c0c0, #87a8c7); /* prata + azul serenite */
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(135,168,199,0.6);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn:hover {
+    background: #87a8c7;
+    color: #fff;
+    box-shadow: 0 0 25px #c0c0c0, 0 0 50px #87a8c7;
+  }
+
+  /* ======= Fundo com notas musicais ======= */
+  .decor-notes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url('https://www.transparenttextures.com/patterns/music-notes.png');
+    opacity: 0.15;
+    z-index: -1;
+  }
+
+  footer {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: #87a8c7;
+    font-style: italic;
+  }
+
+  /* ======= Animação de notas musicais ======= */
+  .note {
+    position: fixed;
+    bottom: -20px;
+    font-size: 1.2em;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1000;
+    animation-name: rise;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: #c0c0c0; /* notas em prata */
+  }
+
+  @keyframes rise {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+  }
+
+  /* ======= Responsividade ======= */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2.5rem; }
+    header h2 { font-size: 1.3rem; }
+    .details h2 { font-size: 1.1rem; }
+    .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="decor-notes"></div>
+
+<header>
+  <h1>🎷 Meus 15 anos 🎶</h1>
+  <h2>by: Maria Gabriely</h2>
+</header>
+
+<section class="details">
+  <h2>Uma noite de Jazz & Blues em tons de prata e azul serenite para celebrar meus 15 anos!</h2>
+  <p><strong>Data:</strong> 27 de novembro de 2025 às 19h</p>
+  <p><strong>Local:</strong> Espaço North - Av. Mister Hull, 4758 - Antônio Bezerra, Fortaleza - CE, 60356-682</p>
+  <a class="btn" href="https://www.google.com/maps/place/Espa%C3%A7o+North" target="_blank">📍 Ver no mapa</a>
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfcEdLxQ0huL4yfuwKb3kHXksM3rMbKfae19P2opt1DxjHrww/viewform?usp=header" target="_blank">✅ Confirmar presença</a>
+</section>
+
+<section class="details">
+  <h2>Sugestões de Presentes</h2>
+  <a class="btn" href="sugestoes.pdf" target="_blank">🎁 Ver Lista </a>
+</section>
+
+<!-- Aviso do traje -->
+<div class="alert">
+  ⚠️ <strong>Observação 1:</strong> O traje da festa é <em>Esporte Fino</em>, inspirado no Jazz & Blues em prata e azul serenite.  
+</div>
+  
+<div class="alert">
+  ⚠️ <strong>Observação 2:</strong> Evite cores fora da paleta para manter a harmonia visual. 🎷
+</div>
+
+<footer>
+  <p>Esperamos você para uma noite inesquecível ao som de Jazz & Blues! 🎶</p>
+</footer>
+
+<script>
+  // ======= Criar notas musicais =======
+function createNote() {
+    const note = document.createElement('div');
+    note.classList.add('note');
+    note.style.left = Math.random() * window.innerWidth + 'px';
+    const size = Math.random() * 20 + 20; 
+    note.style.fontSize = size + 'px';
+    const duration = (Math.random() * 13) + 12; 
+    note.style.animationDuration = duration + 's';
+    note.style.animationDelay = (Math.random() * 1) + 's';
+    const notes = ['🎷','🎺','🎶','🎵'];
+    note.innerText = notes[Math.floor(Math.random() * notes.length)];
+    document.body.appendChild(note);
+    setTimeout(() => note.remove(), (duration * 1000) + 800);
+  }
+  setInterval(createNote, 800);
+</script>
+</body>
+</html>
