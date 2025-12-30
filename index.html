@@ -1,153 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite - 15 anos Leticia Viana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite - 15 anos Leticia Viana</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        /* ======= Configurações de Fundo ======= */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Oswald', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            /* Substitua pelo link da imagem gerada ou use o nome do arquivo salvo */
-            background: url('fundo.png') no-repeat center center fixed;
-            background-size: cover;
-        }
+<style>
+  /* ======= Estilos Jazz & Blues (Prata + Azul Serenite) ======= */
+  body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #e0e0e0; /* prata suave */
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: url('fundo.png') no-repeat center center fixed;
+    background-size: cover;
+  }
 
-        /* ======= Caixa de Texto (O "Vidro") ======= */
-        .main-container {
-            background: rgba(30, 58, 95, 0.7); /* Azul marinho translúcido */
-            backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
-            -webkit-backdrop-filter: blur(10px);
-            max-width: 500px;
-            width: 90%;
-            padding: 40px;
-            margin: 20px;
-            border-radius: 20px;
-            border: 1px solid rgba(192, 192, 192, 0.4); /* Borda Prata sutil */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-            text-align: center;
-            color: #ffffff;
-        }
+  header {
+    padding: 3rem 1rem 2rem 1rem;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 2px solid #c0c0c0; /* prata */
+  }
 
-        header h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3.5rem;
-            color: #c0c0c0; /* Prata */
-            margin-bottom: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
+  header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #c0c0c0; /* prata */
+    margin: 0;
+    text-shadow: 2px 2px 15px #1e3a5f; /* brilho azul serenite */
+  }
 
-        header h2 {
-            font-weight: 300;
-            letter-spacing: 2px;
-            color: #87a8c7; /* Azul Serenity */
-            margin-top: 5px;
-            text-transform: uppercase;
-        }
+  header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #87a8c7; /* azul serenite claro */
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 8px #000;
+  }
 
-        .details {
-            margin: 30px 0;
-            line-height: 1.6;
-        }
+  .details {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 650px;
+    /* --- Efeito Caixa de Vidro --- */
+    background: rgba(30, 58, 95, 0.4); /* Fundo azul escuro translúcido */
+    backdrop-filter: blur(10px); /* Desfoque do fundo musical */
+    -webkit-backdrop-filter: blur(10px);
+    /* ----------------------------- */
+    border-radius: 15px;
+    border: 1px solid #87a8c7; /* azul serenite */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
 
-        .details h3 {
-            font-size: 1.2rem;
-            color: #e0e0e0;
-            margin-bottom: 20px;
-        }
+  .details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #c0c0c0; /* prata */
+    font-weight: 600;
+  }
 
-        .info-row {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
+  /* ======= Botões ======= */
+  .btn {
+    display: inline-block;
+    margin: 0.8rem 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #c0c0c0, #87a8c7); /* prata + azul serenite */
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(135,168,199,0.6);
+    position: relative;
+    overflow: hidden;
+  }
 
-        /* ======= Botões Estilizados ======= */
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+  .btn:hover {
+    background: #87a8c7;
+    color: #fff;
+    box-shadow: 0 0 25px #c0c0c0, 0 0 50px #87a8c7;
+  }
 
-        .btn {
-            display: block;
-            padding: 12px;
-            background: transparent;
-            color: #c0c0c0;
-            border: 1px solid #c0c0c0;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+  /* ======= Fundo com notas musicais ======= */
+  .decor-notes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url('https://www.transparenttextures.com/patterns/music-notes.png');
+    opacity: 0.15;
+    z-index: -1;
+  }
 
-        .btn:hover {
-            background: #c0c0c0;
-            color: #1e3a5f;
-            box-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
-        }
+  .alert {
+    margin: 1.5rem auto;
+    max-width: 600px;
+    color: #87a8c7;
+  }
 
-        .alert {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(135, 168, 199, 0.3);
-            padding-top: 20px;
-            color: #87a8c7;
-        }
+  footer {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: #87a8c7;
+    font-style: italic;
+  }
 
-        footer {
-            margin-top: 25px;
-            font-size: 0.8rem;
-            opacity: 0.8;
-        }
-    </style>
+  /* ======= Responsividade ======= */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2.5rem; }
+    header h2 { font-size: 1.3rem; }
+    .details h2 { font-size: 1.1rem; }
+    .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+  }
+</style>
 </head>
 <body>
+<div class="decor-notes"></div>
 
-    <div class="main-container">
-        <header>
-            <h1>Meus 15 anos</h1>
-            <h2>Leticia Viana</h2>
-        </header>
+<header>
+  <h1>🎷 Meus 15 anos 🎶</h1>
+  <h2>by: Leticia Viana</h2>
+</header>
 
-        <section class="details">
-            <h3>Uma noite inesquecível regada a Jazz & Blues.</h3>
-            
-            <div class="info-row">
-                <strong>📅 04 de Fevereiro de 2026 às 19h</strong>
-            </div>
-            
-            <div class="info-row">
-                📍 Martha's Buffet Conceito<br>
-                <small>Av. Bezerra de Menezes, 531 - Fortaleza</small>
-            </div>
+<section class="details">
+  <h2>Venha curtir essa linda noite de Jazz & Blues para celebrar meus 15 anos!</h2>
+  <p><strong>Data:</strong> 04 de Fevereiro de 2026 às 19h</p>
+  <p><strong>Local:</strong> Martha's Buffet Conceito - Av. Bezerra de Menezes, 531 - São Gerardo, Fortaleza - CE, 60325-004</p>
+  <a class="btn" href="https://maps.google.com" target="_blank">📍 Ver no mapa</a>
+  <a class="btn" href="#">✅ Confirmar presença</a>
+</section>
 
-            <div class="btn-group">
-                <a class="btn" href="https://maps.google.com" target="_blank">Ver Localização</a>
-                <a class="btn" href="#">Confirmar Presença</a>
-                <a class="btn" href="#">Lista de Presentes</a>
-            </div>
-        </section>
+<section class="details">
+  <h2>Sugestões de Presentes</h2>
+  <a class="btn" href="sugestoes.pdf" target="_blank">🎁 Ver Lista </a>
+</section>
 
-        <div class="alert">
-            ⚠️ <strong>Observação:</strong> O traje da festa é <em>Esporte Fino</em>, inspirado no Jazz & Blues, evitar azul serenity.
-        </div>
+<div class="alert">
+  ⚠️ <strong>Observação:</strong> O traje da festa é <em>Esporte Fino</em>, inspirado no Jazz & Blues, evitar azul serenity.  
+</div>
 
-        <footer>
-            🎶 Esperamos você para uma noite inesquecível ao som de Jazz & Blues! 🎶
-        </footer>
-    </div>
+<footer>
+  <p>Esperamos você para uma noite inesquecível ao som de Jazz & Blues! 🎶</p>
+</footer>
 
 </body>
 </html>
-
